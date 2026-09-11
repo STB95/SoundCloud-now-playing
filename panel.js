@@ -1,6 +1,4 @@
-const API =
-  "https://soundcloudnowplaying.turnerb-sarah.workers.dev/api/current";
-
+const API = CONFIG.API;
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")

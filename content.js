@@ -1,5 +1,5 @@
 const API =
-  "https://soundcloudnowplaying.turnerb-sarah.workers.dev/api/current";
+  CONFIG.API;
 
 let lastSent = "";
 let checkRunning = false;
