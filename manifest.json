@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "♡ My SoundCloud Now Playing",
+  "version": "1.0.0",
+  "description": "Sends the currently playing SoundCloud track to my Now Playing page.",
+  "content_scripts": [
+    {
+      "matches": ["https://soundcloud.com/*", "https://www.soundcloud.com/*"],
+      "js": ["config.js,content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://soundcloudnowplaying.turnerb-sarah.workers.dev/*"
+  ]
+}

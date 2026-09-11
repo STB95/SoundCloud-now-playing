@@ -1,0 +1,21 @@
+cat > .gitignore <<'EOF'
+# Local HTTPS development files
+mkcert.exe
+localhost+2.pem
+localhost+2-key.pem
+
+# Local secrets/configuration
+.env
+.env.*
+config.js
+
+# Dependencies
+node_modules/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+EOF
