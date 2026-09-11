@@ -166,68 +166,9 @@ Move the extension from Local Test to Hosted Test.
 Hosted Test serves the uploaded assets through Twitch rather than localhost.
 
 Production
-
 After successful Hosted Test, the extension can be submitted to Twitch for review.
 
 License
-
 This project is provided for the purposes of developing and operating the SoundCloud-NowPlaying Twitch Extension.
 EOF
 
-
-### 8. Check what Git sees
-
-This is extremely important.
-
-Run:
-git status --short
-
-You should see your normal project files, but you should NOT see:
-
-config.js
-mkcert.exe
-localhost+2.pem
-localhost+2-key.pem
-
-If config.js appears, stop. Do not run git add ..
-
-## 9. Initialize Git
-
-If this project isn't already a Git repository, run:
-
-git init
-
-Then:
-
-git branch -M main
-## 11. Add the files
-
-Run:
-
-git add .
-
-Then immediately check:
-
-git status
-
-Look carefully at the list under:
-
-Changes to be committed
-
-You should see something along the lines of:
-
-new file:   .gitignore
-new file:   README.md
-new file:   privacy-policy.html
-new file:   content.js
-new file:   manifest.json
-new file:   panel.html
-new file:   panel.js
-new file:   style.css
-
-You should not see:
-
-config.js
-mkcert.exe
-localhost+2.pem
-localhost+2-key.pem
